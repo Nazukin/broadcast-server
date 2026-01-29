@@ -29,4 +29,9 @@ async def main():
     await server.wait_closed()
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    try:
+        asyncio.run(main())
+    except KeyboardInterrupt:
+        server_input = input("Are you sure shutting down the server?")
+        if(server_input.lower() == "yes"):
+            print("Shutting Down Server")

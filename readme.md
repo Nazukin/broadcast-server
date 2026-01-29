@@ -11,7 +11,7 @@
 * [ ] Implement 'broadcast-server connect' for connecting the client to server
 * [X] Listen at spesified port(either configure using command or hardcoded)
 * [X] Handling multiple client
-* [ ] Proper disconnect
+* [X] Proper disconnect
 
 ### Implementation
 
@@ -21,11 +21,12 @@
 * [ ] Handle client disconnections and remove the client from the list of connected clients.
 * [X] Implement a client that can connect to the server and send messages.
 * [X] Test the server by connecting multiple clients and sending messages.
-* [ ] Implement error handling and graceful shutdown of the server.
+* [X] Implement error handling and graceful shutdown of the server.
 
 ### My Improvment
 
 * [X] Adding ID to any connected client
 * [X] Adding datetime for every incoming message
-* [ ] Making sure when client send a message other client recieve it immediately
+* [X] Making sure when client send a message other client recieve it immediately
 * [X] Implement message when client dissconect
+* [ ] Allow user to set their username
