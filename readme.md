@@ -29,4 +29,4 @@
 * [X] Adding datetime for every incoming message
 * [X] Making sure when client send a message other client recieve it immediately
 * [X] Implement message when client dissconect
-* [ ] Allow user to set their username
+* [X] Allow user to set their username

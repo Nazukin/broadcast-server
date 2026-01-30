@@ -7,6 +7,11 @@ datenow = datetime.datetime.now()
 
 async def chat():
     async with websockets.connect('ws://localhost:6767') as websocket:
+        username = input("Enter Your name: ")
+        await websocket.send(username)
+        print(f"Welcome {username}")
+
+
         async def send_messages():
              while True:
                   print("Enter Your Message Below")
@@ -16,7 +21,7 @@ async def chat():
         async def recieve_messages():
             while True:
                 response = await websocket.recv()
-                print(f"Received at {datenow} : {response}")
+                print(f"Received at {datenow} by {username} : {response}")
 
         await asyncio.gather(send_messages(), recieve_messages())
 
