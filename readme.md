@@ -30,3 +30,43 @@
 * [X] Making sure when client send a message other client recieve it immediately
 * [X] Implement message when client dissconect
 * [X] Allow user to set their username
+
+
+
+### Installation
+
+* Clone this project and install asioconsole package first since everything else is already supported on the newer version of Python
+
+```Python
+pip install aioconsole
+```
+
+
+### How To Use
+
+* Run the server script first
+
+```Python
+python server.py
+```
+
+* Then run the client script
+
+```Python
+python client.py
+```
+
+* Enter your desired name in the client side
+
+```
+Enter Your name:
+```
+
+* Once you entered the name in the client, you'll see the update in the server side like this
+
+```
+Client with uuid [insert uuid here] has been registerd as [your name]
+```
+
+* Type the message in the client side and send it using enter
+* The server side will recieve the message from the client side
